@@ -1,0 +1,15 @@
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\bin\Debug\net8.0\Ecommerce.Service.deps.json
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\bin\Debug\net8.0\Ecommerce.Service.dll
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\bin\Debug\net8.0\Ecommerce.Service.pdb
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\bin\Debug\net8.0\ECommerce.Core.dll
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\bin\Debug\net8.0\ECommerce.Core.pdb
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\Ecommerce.Service.csproj.AssemblyReference.cache
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\Ecommerce.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\Ecommerce.Service.AssemblyInfoInputs.cache
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\Ecommerce.Service.AssemblyInfo.cs
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\Ecommerce.Service.csproj.CoreCompileInputs.cache
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\Ecommerc.B292E58B.Up2Date
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\Ecommerce.Service.dll
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\refint\Ecommerce.Service.dll
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\Ecommerce.Service.pdb
+F:\EcommerceV2\Ecommerce\Ecommerce.Service\obj\Debug\net8.0\ref\Ecommerce.Service.dll
