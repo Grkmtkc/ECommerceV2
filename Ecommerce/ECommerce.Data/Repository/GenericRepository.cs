@@ -1,4 +1,5 @@
 ﻿using ECommerce.Core.Repositories;
+using ECommerce.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
@@ -7,10 +8,10 @@ namespace ECommerce.Data.Repository
 {
     public class GenericRepository<T> : IGenericRepository<T> where T : class
     {
-        protected readonly DbContext _context;
+        protected readonly ECommerceDbContext _context;
         protected readonly DbSet<T> _dbSet;
 
-        public GenericRepository(DbContext context)
+        public GenericRepository(ECommerceDbContext context)
         {
             _context = context;
             _dbSet = _context.Set<T>();

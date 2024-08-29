@@ -1,5 +1,6 @@
 ﻿using ECommerce.Core.Entities;
 using ECommerce.Core.Repositories;
+using ECommerce.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -7,7 +8,7 @@ namespace ECommerce.Data.Repository
 {
     public class AddressesRepository : GenericRepository<Addresses>, IAddressesRepository
     {
-        public AddressesRepository(DbContext context) : base(context)
+        public AddressesRepository(ECommerceDbContext context) : base(context)
         {
         }
 

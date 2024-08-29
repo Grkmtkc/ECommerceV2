@@ -1,5 +1,6 @@
 ﻿using ECommerce.Core.Entities;
 using ECommerce.Core.Repositories;
+using ECommerce.Data.Context;
 using Microsoft.EntityFrameworkCore;
 
 
@@ -7,7 +8,7 @@ namespace ECommerce.Data.Repository
 {
     public class CustomerRepository : GenericRepository<Customers>, ICustomerRepository
     {
-        public CustomerRepository(DbContext context) : base(context)
+        public CustomerRepository(ECommerceDbContext context) : base(context)
         {
         }
 

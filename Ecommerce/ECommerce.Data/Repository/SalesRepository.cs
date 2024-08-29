@@ -1,5 +1,6 @@
 ﻿using ECommerce.Core.Entities;
 using ECommerce.Core.Repositories;
+using ECommerce.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -8,7 +9,7 @@ namespace ECommerce.Data.Repository
 {
     public class SalesRepository : GenericRepository<Sales>, ISalesRepository
     {
-        public SalesRepository(DbContext context) : base(context)
+        public SalesRepository(ECommerceDbContext context) : base(context)
         {
         }
 

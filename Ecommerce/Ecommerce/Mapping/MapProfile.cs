@@ -8,12 +8,12 @@ namespace ECommerce.API.Mapping
     {
         public MapProfile()
         {
-            CreateMap<Addresses, AddressesDto>().ReverseMap();
+            CreateMap<Addresses, AddressDto>().ReverseMap();
             CreateMap<BaseEntity, BaseEntityDto>().ReverseMap();
             CreateMap<Products, ProductDto>().ReverseMap();
-            CreateMap<Communications, CommunicationsDto>().ReverseMap();
+            CreateMap<Communications, CommunicationDto>().ReverseMap();
             CreateMap<Customers, CustomerDto>().ReverseMap();
-            CreateMap<Sales, SalesDto>().ReverseMap();
+            CreateMap<Sales, SaleDto>().ReverseMap();
         }
     }
 }
