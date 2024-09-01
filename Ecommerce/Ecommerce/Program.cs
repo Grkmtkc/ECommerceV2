@@ -27,7 +27,7 @@ builder.Services.AddSwaggerGen();
 //});
 
 builder.Services.AddDbContext<ECommerceDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"))
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
 );
 
 

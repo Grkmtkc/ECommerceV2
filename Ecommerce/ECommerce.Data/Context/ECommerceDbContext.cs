@@ -18,6 +18,12 @@ namespace ECommerce.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Addresses>()
+           .HasOne(a => a.Customer)
+           .WithMany(c => c.Addresses)
+           .HasForeignKey(a => a.CustomerId)
+           .OnDelete(DeleteBehavior.Cascade);
+
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
             base.OnModelCreating(modelBuilder);
         }

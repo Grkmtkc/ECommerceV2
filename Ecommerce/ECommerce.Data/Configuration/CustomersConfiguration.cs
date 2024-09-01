@@ -9,8 +9,10 @@ namespace ECommerce.Data.Configuration
     {
         public void Configure(EntityTypeBuilder<Customers> builder)
         {
+            // Primary Key
             builder.HasKey(c => c.Id);
 
+            // Property configurations
             builder.Property(c => c.FirstName)
                    .IsRequired()
                    .HasMaxLength(50);
@@ -34,14 +36,16 @@ namespace ECommerce.Data.Configuration
             builder.Property(c => c.IsDeleted)
                    .HasDefaultValue(false);
 
+            // Relationship with Addresses
             builder.HasMany(c => c.Addresses)
-                   .WithOne()
+                   .WithOne(a => a.Customer) // Addresses tablosundaki Customer navigasyon özelliği
                    .HasForeignKey(a => a.CustomerId)
                    .OnDelete(DeleteBehavior.Cascade);
 
+            // Relationship with Communications
             builder.HasMany(c => c.Communications)
-                   .WithOne(c => c.Customer)
-                   .HasForeignKey(c => c.CustomerId)
+                   .WithOne(cm => cm.Customer) // Communications tablosundaki Customer navigasyon özelliği
+                   .HasForeignKey(cm => cm.CustomerId)
                    .OnDelete(DeleteBehavior.Cascade);
         }
     }

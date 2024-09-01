@@ -2,6 +2,7 @@
 {
     public class Addresses : BaseEntity
     {
+        public int Id { get; set; }
         public int CustomerId { get; set; }
         public string Adress { get; set; }
         public string City { get; set; }
