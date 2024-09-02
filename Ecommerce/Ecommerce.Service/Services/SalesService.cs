@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Ecommerce.Service.Services
 {
-    public class SalesService : Service<Sales>, ISalesService
+    public class SalesService : Service<Sales>, ISaleService
     {
         private readonly IUnitOfWorks _unitOfWork;
         private readonly IGenericRepository<Sales> _salesRepository;

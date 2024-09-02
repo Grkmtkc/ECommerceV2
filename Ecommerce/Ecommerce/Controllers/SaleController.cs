@@ -2,7 +2,6 @@
 using ECommerce.API.DTOs;
 using ECommerce.Core.Entities;
 using ECommerce.Core.Services;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerce.API.Controllers
@@ -12,9 +11,9 @@ namespace ECommerce.API.Controllers
     public class SaleController : CustomBaseController
     {
         private readonly IMapper _mapper;
-        private readonly ISalesService _saleService;
+        private readonly ISaleService _saleService;
 
-        public SaleController(IMapper mapper, ISalesService saleService)
+        public SaleController(IMapper mapper, ISaleService saleService)
         {
             _mapper = mapper;
             _saleService = saleService;

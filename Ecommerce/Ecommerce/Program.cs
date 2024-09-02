@@ -6,7 +6,6 @@ using ECommerce.Data.Context;
 using ECommerce.Data.Repository;
 using ECommerce.Data.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
 using Ecommerce.Service.Services;
 using static ECommerce.Core.Services.IService;
 
@@ -18,13 +17,6 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//builder.Services.AddDbContext<ECommerceDbContext>(options =>
-//{
-//    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"), sqlOptions =>
-//    {
-//        sqlOptions.MigrationsAssembly(Assembly.GetAssembly(typeof(ECommerceDbContext)).GetName().Name);
-//    });
-//});
 
 builder.Services.AddDbContext<ECommerceDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
@@ -35,17 +27,17 @@ builder.Services.AddDbContext<ECommerceDbContext>(options =>
 builder.Services.AddScoped<IUnitOfWorks, UnitOfWork>();
 
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddScoped<IAddressesRepository, AddressesRepository>();
-builder.Services.AddScoped<ICommunicationsRepository, CommunicationsRepository>();
+builder.Services.AddScoped<IAddressRepository, AddressRepository>();
+builder.Services.AddScoped<ICommunicationRepository, CommunicationRepository>();
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<ISalesRepository, SalesRepository>();
+builder.Services.AddScoped<ISalesRepository, SaleRepository>();
 
 builder.Services.AddScoped<IAddressService, AddressService>();
 builder.Services.AddScoped<ICommunicationService, CommunicationService>();
 builder.Services.AddScoped<ICustomerService, CustomerService>();
 builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<ISalesService, SalesService>();
+builder.Services.AddScoped<ISaleService, SalesService>();
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 
 builder.Services.AddAutoMapper(typeof(MapProfile).Assembly);
