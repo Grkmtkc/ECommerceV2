@@ -31,7 +31,7 @@ namespace ECommerce.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
-            var address = await _addressService.GetById(id);
+            var address = await _addressService.GetById(id); // 'GetById' metodunu kullanarak adresi alıyoruz
             if (address == null)
             {
                 return NotFound();
@@ -44,7 +44,7 @@ namespace ECommerce.API.Controllers
         public async Task<IActionResult> Create(AddressDto addressDto)
         {
             var address = _mapper.Map<Addresses>(addressDto);
-            var newAddress = await _addressService.AddAsync(address);
+            var newAddress = await _addressService.AddAsync(address); // Yeni adresi ekliyoruz
             var newAddressDto = _mapper.Map<AddressDto>(newAddress);
             return CreatedAtAction(nameof(GetById), new { id = newAddressDto.Id }, CustomResponseDto<AddressDto>.Success(201, newAddressDto));
         }
@@ -58,21 +58,23 @@ namespace ECommerce.API.Controllers
             }
 
             var address = _mapper.Map<Addresses>(addressDto);
-            await _addressService.UpdateAsync(address);
+            await _addressService.UpdateAsync(address); // Adresi güncelliyoruz
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            var address = await _addressService.GetById(id);
+            var address = await _addressService.GetById(id); // Adresi alıyoruz
             if (address == null)
             {
                 return NotFound();
             }
 
-            await _addressService.RemoveAsync(address);
+            await _addressService.RemoveAsync(address); // Adresi siliyoruz
             return NoContent();
         }
     }
 }
+
+

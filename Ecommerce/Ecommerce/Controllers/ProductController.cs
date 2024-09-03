@@ -29,8 +29,8 @@ namespace ECommerce.API.Controllers
            var products = await _productService.GetAllAsync();
            var productsDto= _mapper.Map<List<ProductDto>>(products);
            return CreateActionResult(CustomResponseDto<List<ProductDto>>.Success(200, productsDto));
-       
-          }
+
+        }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)

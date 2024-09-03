@@ -11,7 +11,7 @@
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
         public decimal TotalAmount { get; set; }
-        public ICollection<CustomerDto> Customers { get; set; }
-        public ICollection<ProductDto> Products { get; set; }
+        public ICollection<CustomerDto>? Customers { get; set; }
+        public ICollection<ProductDto>? Products { get; set; }
     }
 }

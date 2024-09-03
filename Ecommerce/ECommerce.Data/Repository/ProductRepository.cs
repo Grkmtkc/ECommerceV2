@@ -1,10 +1,11 @@
 ﻿using ECommerce.Core.Entities;
 using ECommerce.Core.Repositories;
 using ECommerce.Data.Context;
+using ECommerce.Data.Repository;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace ECommerce.Data.Repository
+namespace Ecommerce.Data.Repository
 {
     public class ProductRepository : GenericRepository<Products>, IProductRepository
     {
@@ -12,7 +13,14 @@ namespace ECommerce.Data.Repository
         {
         }
 
-        // Fiyat aralığına göre ürünleri getirme
+        public async Task<Products> GetWithSalesByIdAsync(int productId)
+        {
+            return await _dbSet
+                .Where(p => p.Id == productId)
+                .Include(p => p.Sales)
+                .FirstOrDefaultAsync();
+        }
+
         public async Task<IEnumerable<Products>> GetProductsByPriceRangeAsync(decimal minPrice, decimal maxPrice)
         {
             return await _dbSet
@@ -20,7 +28,6 @@ namespace ECommerce.Data.Repository
                 .ToListAsync();
         }
 
-        // Stokta olan ürünleri getirme
         public async Task<IEnumerable<Products>> GetAvailableProductsAsync()
         {
             return await _dbSet
@@ -28,7 +35,6 @@ namespace ECommerce.Data.Repository
                 .ToListAsync();
         }
 
-        // En çok satan ürünleri getirme
         public async Task<IEnumerable<Products>> GetTopSellingProductsAsync(int count)
         {
             return await _dbSet

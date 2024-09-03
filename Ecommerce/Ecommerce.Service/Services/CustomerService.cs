@@ -8,22 +8,26 @@ namespace Ecommerce.Service.Services
 {
     public class CustomerService : Service<Customers>, ICustomerService
     {
-        private readonly IUnitOfWorks _unitOfWork;
         private readonly IGenericRepository<Customers> _customerRepository;
+        private readonly IUnitOfWorks _unitOfWork;
 
-        public CustomerService(IUnitOfWorks unitOfWork, IGenericRepository<Customers> customerRepository)
+        public CustomerService(IGenericRepository<Customers> customerRepository, IUnitOfWorks unitOfWork)
             : base(customerRepository, unitOfWork)
         {
-            _unitOfWork = unitOfWork;
             _customerRepository = customerRepository;
+            _unitOfWork = unitOfWork;
         }
 
-        
+        // Implementing GetByIdAsync method
+        public async Task<Customers> GetByIdAsync(int id)
+        {
+            return await _customerRepository.Where(c => c.Id == id).FirstOrDefaultAsync();
+        }
 
         public async Task<Customers> GetCustomerWithDetailsByIdAsync(int customerId)
         {
             return await _customerRepository
-                .Where(c => c.Id == customerId && c.IsActive && !c.IsDeleted)
+                .Where(c => c.Id == customerId)
                 .Include(c => c.Addresses)
                 .Include(c => c.Communications)
                 .Include(c => c.Sales)

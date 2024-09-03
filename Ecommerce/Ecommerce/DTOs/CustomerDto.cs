@@ -9,8 +9,8 @@
         public DateTime RegistrationDate { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
-        public ICollection<AddressDto> Addresses { get; set; }
-        public ICollection<CommunicationDto> Communications { get; set; }
-        public ICollection<SaleDto> Sales { get; set; }
+        public ICollection<AddressDto>? Addresses { get; set; }
+        public ICollection<CommunicationDto>?    Communications { get; set; }
+        public ICollection<SaleDto>? Sales { get; set; }
     }
 }

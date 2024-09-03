@@ -5,6 +5,7 @@ namespace ECommerce.Core.Services
 {
     public interface ICustomerService : IService<Customers>
     {
+        Task<Customers> GetByIdAsync(int id);
         Task<Customers> GetCustomerWithDetailsByIdAsync(int customerId);
     }
 }

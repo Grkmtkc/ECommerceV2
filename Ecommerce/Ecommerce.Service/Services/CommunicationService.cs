@@ -5,7 +5,7 @@ using ECommerce.Core.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
 
 
-namespace Ecommerce.Service.Services
+namespace Ecommerce.Service.Services        
 {
     public class CommunicationService : Service<Communications>, ICommunicationService
     {

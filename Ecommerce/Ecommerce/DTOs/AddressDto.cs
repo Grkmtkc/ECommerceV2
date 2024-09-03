@@ -9,6 +9,6 @@
         public string Country { get; set; }
         public bool IsActive { get; set; }
         public bool IsDeleted { get; set; }
-        public ICollection<CustomerDto> Customers { get; set; }
+     
     }
 }

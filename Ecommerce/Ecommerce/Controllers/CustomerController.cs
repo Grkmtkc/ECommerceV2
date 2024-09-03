@@ -42,6 +42,11 @@ namespace ECommerce.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CustomerDto customerDto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             var customer = _mapper.Map<Customers>(customerDto);
             var newCustomer = await _customerService.AddAsync(customer);
             var newCustomerDto = _mapper.Map<CustomerDto>(newCustomer);
@@ -51,6 +56,11 @@ namespace ECommerce.API.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(int id, CustomerDto customerDto)
         {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
             if (id != customerDto.Id)
             {
                 return BadRequest("ID mismatch");
@@ -75,3 +85,4 @@ namespace ECommerce.API.Controllers
         }
     }
 }
+

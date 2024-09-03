@@ -1,4 +1,5 @@
 ﻿using ECommerce.Core.Entities;
+using ECommerce.Data.Seeds;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -25,6 +26,13 @@ namespace ECommerce.Data.Context
            .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+
+            CustomersSeed.Seed(modelBuilder);
+            AddressesSeed.Seed(modelBuilder);
+            CommunicationsSeed.Seed(modelBuilder);
+            ProductsSeed.Seed(modelBuilder);
+            SalesSeed.Seed(modelBuilder);
+
             base.OnModelCreating(modelBuilder);
         }
 
