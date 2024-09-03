@@ -1,9 +1,3 @@
-F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.csproj.AssemblyReference.cache
-F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.GeneratedMSBuildEditorConfig.editorconfig
-F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.AssemblyInfoInputs.cache
-F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.AssemblyInfo.cs
-F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.csproj.CoreCompileInputs.cache
-F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.MvcApplicationPartsAssemblyInfo.cache
 F:\EcommerceV2\Ecommerce\Ecommerce\bin\Debug\net8.0\appsettings.Development.json
 F:\EcommerceV2\Ecommerce\Ecommerce\bin\Debug\net8.0\appsettings.json
 F:\EcommerceV2\Ecommerce\Ecommerce\bin\Debug\net8.0\ECommerce.API.exe
@@ -129,6 +123,13 @@ F:\EcommerceV2\Ecommerce\Ecommerce\bin\Debug\net8.0\Ecommerce.Service.dll
 F:\EcommerceV2\Ecommerce\Ecommerce\bin\Debug\net8.0\ECommerce.Data.pdb
 F:\EcommerceV2\Ecommerce\Ecommerce\bin\Debug\net8.0\Ecommerce.Service.pdb
 F:\EcommerceV2\Ecommerce\Ecommerce\bin\Debug\net8.0\ECommerce.Core.pdb
+F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.csproj.AssemblyReference.cache
+F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.GeneratedMSBuildEditorConfig.editorconfig
+F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.AssemblyInfoInputs.cache
+F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.AssemblyInfo.cs
+F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.csproj.CoreCompileInputs.cache
+F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.MvcApplicationPartsAssemblyInfo.cs
+F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.MvcApplicationPartsAssemblyInfo.cache
 F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\staticwebassets.build.json
 F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\staticwebassets.development.json
 F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\staticwebassets\msbuild.ECommerce.API.Microsoft.AspNetCore.StaticWebAssets.props
@@ -143,4 +144,3 @@ F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\refint\ECommerce.API.dll
 F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.pdb
 F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.genruntimeconfig.cache
 F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ref\ECommerce.API.dll
-F:\EcommerceV2\Ecommerce\Ecommerce\obj\Debug\net8.0\ECommerce.API.MvcApplicationPartsAssemblyInfo.cs

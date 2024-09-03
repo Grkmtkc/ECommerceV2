@@ -8,6 +8,7 @@ using ECommerce.Data.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
 using Ecommerce.Service.Services;
 using static ECommerce.Core.Services.IService;
+using Ecommerce.Data.Repository;
 
 
 var builder = WebApplication.CreateBuilder(args);

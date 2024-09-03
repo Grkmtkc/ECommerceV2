@@ -3,9 +3,7 @@
     public class SaleDto : BaseEntityDto
     {
         public int CustomerId { get; set; }
-        public CustomerDto Customer { get; set; }
         public int ProductId { get; set; }
-        public ProductDto Product { get; set; }
         public DateTime SaleDate { get; set; }
         public int Quantity { get; set; }
         public bool IsActive { get; set; }

@@ -6,5 +6,6 @@ namespace ECommerce.Core.UnitOfWorks
     {
         Task CommitAsync();
         void Commit();
+        Task CompleteAsync();
     }
 }

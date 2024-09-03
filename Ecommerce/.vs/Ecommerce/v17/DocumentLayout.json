@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "F:\\EcommerceV2\\Ecommerce\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{342FEAD3-BBE8-4F81-A72F-B2D6D345C9AB}|Ecommerce\\ECommerce.API.csproj|f:\\ecommercev2\\ecommerce\\ecommerce\\mapping\\mapprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{342FEAD3-BBE8-4F81-A72F-B2D6D345C9AB}|Ecommerce\\ECommerce.API.csproj|solutionrelative:ecommerce\\mapping\\mapprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{342FEAD3-BBE8-4F81-A72F-B2D6D345C9AB}|Ecommerce\\ECommerce.API.csproj|f:\\ecommercev2\\ecommerce\\ecommerce\\dtos\\saledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{342FEAD3-BBE8-4F81-A72F-B2D6D345C9AB}|Ecommerce\\ECommerce.API.csproj|solutionrelative:ecommerce\\dtos\\saledto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{342FEAD3-BBE8-4F81-A72F-B2D6D345C9AB}|Ecommerce\\ECommerce.API.csproj|f:\\ecommercev2\\ecommerce\\ecommerce\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{342FEAD3-BBE8-4F81-A72F-B2D6D345C9AB}|Ecommerce\\ECommerce.API.csproj|solutionrelative:ecommerce\\controllers\\addresscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{342FEAD3-BBE8-4F81-A72F-B2D6D345C9AB}|Ecommerce\\ECommerce.API.csproj|f:\\ecommercev2\\ecommerce\\ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{342FEAD3-BBE8-4F81-A72F-B2D6D345C9AB}|Ecommerce\\ECommerce.API.csproj|solutionrelative:ecommerce\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +27,40 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "MapProfile.cs",
-              "DocumentMoniker": "F:\\EcommerceV2\\Ecommerce\\Ecommerce\\Mapping\\MapProfile.cs",
-              "RelativeDocumentMoniker": "Ecommerce\\Mapping\\MapProfile.cs",
-              "ToolTip": "F:\\EcommerceV2\\Ecommerce\\Ecommerce\\Mapping\\MapProfile.cs",
-              "RelativeToolTip": "Ecommerce\\Mapping\\MapProfile.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T06:15:05.031Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "SaleDto.cs",
               "DocumentMoniker": "F:\\EcommerceV2\\Ecommerce\\Ecommerce\\DTOs\\SaleDto.cs",
               "RelativeDocumentMoniker": "Ecommerce\\DTOs\\SaleDto.cs",
               "ToolTip": "F:\\EcommerceV2\\Ecommerce\\Ecommerce\\DTOs\\SaleDto.cs",
               "RelativeToolTip": "Ecommerce\\DTOs\\SaleDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-03T06:09:00.65Z",
+              "WhenOpened": "2024-09-03T08:34:33.448Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddressController.cs",
+              "DocumentMoniker": "F:\\EcommerceV2\\Ecommerce\\Ecommerce\\Controllers\\AddressController.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Controllers\\AddressController.cs",
+              "ToolTip": "F:\\EcommerceV2\\Ecommerce\\Ecommerce\\Controllers\\AddressController.cs",
+              "RelativeToolTip": "Ecommerce\\Controllers\\AddressController.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAewDAAAABiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T08:26:04.946Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "F:\\EcommerceV2\\Ecommerce\\Ecommerce\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Ecommerce\\Controllers\\ProductController.cs",
+              "ToolTip": "F:\\EcommerceV2\\Ecommerce\\Ecommerce\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Ecommerce\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDAAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-03T08:25:48.354Z",
               "EditorCaption": ""
             }
           ]

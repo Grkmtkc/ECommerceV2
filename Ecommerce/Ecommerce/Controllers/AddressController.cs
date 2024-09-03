@@ -46,7 +46,7 @@ namespace ECommerce.API.Controllers
             var address = _mapper.Map<Addresses>(addressDto);
             var newAddress = await _addressService.AddAsync(address); // Yeni adresi ekliyoruz
             var newAddressDto = _mapper.Map<AddressDto>(newAddress);
-            return CreatedAtAction(nameof(GetById), new { id = newAddressDto.Id }, CustomResponseDto<AddressDto>.Success(201, newAddressDto));
+            return CreateActionResult( CustomResponseDto<AddressDto>.Success(201, newAddressDto));
         }
 
         [HttpPut("{id}")]

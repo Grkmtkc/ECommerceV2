@@ -3,6 +3,7 @@ using ECommerce.Core.Repositories;
 using ECommerce.Core.Services;
 using ECommerce.Core.UnitOfWorks;
 using Microsoft.EntityFrameworkCore;
+using System.Threading.Tasks;
 
 namespace Ecommerce.Service.Services
 {
@@ -18,7 +19,6 @@ namespace Ecommerce.Service.Services
             _unitOfWork = unitOfWork;
         }
 
-        // Implementing GetByIdAsync method
         public async Task<Customers> GetByIdAsync(int id)
         {
             return await _customerRepository.Where(c => c.Id == id).FirstOrDefaultAsync();
@@ -32,6 +32,13 @@ namespace Ecommerce.Service.Services
                 .Include(c => c.Communications)
                 .Include(c => c.Sales)
                 .FirstOrDefaultAsync();
+        }
+
+        public async Task<Customers> AddAsync(Customers customer)
+        {
+            await _customerRepository.AddAsync(customer);
+            await _unitOfWork.CompleteAsync();
+            return customer;
         }
     }
 }

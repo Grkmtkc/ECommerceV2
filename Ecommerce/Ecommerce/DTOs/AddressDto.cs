@@ -2,7 +2,7 @@
 {
     public class AddressDto : BaseEntityDto
     {
-        public int Id { get; set; }
+       
         public int CustomerId { get; set; }
         public string Address { get; set; }
         public string City { get; set; }

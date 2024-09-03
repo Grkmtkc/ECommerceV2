@@ -42,10 +42,6 @@ namespace ECommerce.API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CustomerDto customerDto)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
 
             var customer = _mapper.Map<Customers>(customerDto);
             var newCustomer = await _customerService.AddAsync(customer);
